@@ -21,10 +21,6 @@ Date=20$Year$Month$Day
 TmpDir=/tmp
 BuildDir=$TmpDir/software_build
 
-cd output/i386-win32/
-zip ../fhem_to_mqtt_win32.zip fhem2mqtt.exe
-cd ../..
-
 rm -rf $BuildDir
 mkdir -p $BuildDir/usr/share/doc/$Program/
 echo "copyright and changelog files..."
