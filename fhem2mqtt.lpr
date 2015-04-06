@@ -6,7 +6,7 @@ uses
   {$IFDEF UNIX}
   cthreads,
   {$ENDIF}
-  Classes, SysUtils, CustApp, ufhem, laz_synapse, LAZ_MQTT
+  Classes, SysUtils, CustApp, ufhem, laz_synapse, LAZ_MQTT, mqtt
   { you can add units after this };
 
 type

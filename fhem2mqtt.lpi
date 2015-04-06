@@ -53,7 +53,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="fhem2mqtt"/>
+      <Filename Value="output/$(TargetCPU)-$(TargetOS)/fhem2mqtt"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
