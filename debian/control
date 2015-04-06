@@ -1,0 +1,14 @@
+Source: fehm2mqtt
+Package: fehm2mqtt
+Version: VERSION
+Section: office
+Priority: optional
+Maintainer: Christian Ulrich <info@free-erp.de>
+Architecture: ARCH
+Depends:  libc6
+Installed-Size: DEBSIZE
+Description: Programm that catchs Messages from FHEM and passes it to an MQTT Brooker
+ usage fhem2mqtt -f FEHMServer -m MQTTBrooker
+ Example: hem2mqtt -f 192.168.1.2 -m 192.168.1.5
+ .
+
