@@ -96,7 +96,9 @@ end;
 procedure TFHEM2MQTT.WriteHelp;
 begin
   { add your help code here }
-  writeln('Usage: ', ExeName, ' -h');
+  writeln('Usage: ', ExeName, ' -hfm');
+  writeln('-f FHEM Instance');
+  writeln('-m MQTT Instance');
 end;
 
 var

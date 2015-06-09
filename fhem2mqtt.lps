@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectSession>
     <Version Value="9"/>
@@ -8,10 +8,9 @@
         <Filename Value="fhem2mqtt.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="1"/>
-        <CursorPos X="64" Y="9"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="65"/>
+        <CursorPos X="19" Y="100"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -19,10 +18,8 @@
         <Filename Value="ufhem.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="ufhem"/>
-        <EditorIndex Value="0"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="16"/>
-        <CursorPos X="27" Y="37"/>
+        <TopLine Value="11"/>
+        <CursorPos X="3" Y="106"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit1>
@@ -37,8 +34,6 @@
         <ComponentName Value="fMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uMain"/>
-        <WindowIndex Value="0"/>
         <TopLine Value="1078"/>
         <CursorPos X="26" Y="1129"/>
         <UsageCount Value="20"/>
@@ -73,40 +68,37 @@
       </Unit8>
       <Unit9>
         <Filename Value="../promet-erp/promet/source/components/synapse/synaser.pas"/>
-        <UnitName Value="synaser"/>
-        <EditorIndex Value="1"/>
-        <WindowIndex Value="0"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="229"/>
         <CursorPos X="22" Y="255"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit9>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="0"/>
-    </General>
     <JumpHistory Count="4" HistoryIndex="3">
       <Position1>
         <Filename Value="ufhem.pas"/>
         <Caret Line="37" Column="27" TopLine="16"/>
       </Position1>
       <Position2>
-        <Filename Value="../promet-erp/promet/source/components/synapse/synaser.pas"/>
-        <Caret Line="1" Column="1" TopLine="1"/>
+        <Filename Value="fhem2mqtt.lpr"/>
+        <Caret Line="9" Column="59" TopLine="4"/>
       </Position2>
       <Position3>
-        <Filename Value="../promet-erp/promet/source/components/synapse/synaser.pas"/>
-        <Caret Line="244" Column="12" TopLine="214"/>
+        <Filename Value="fhem2mqtt.lpr"/>
+        <Caret Line="58" Column="8" TopLine="32"/>
       </Position3>
       <Position4>
         <Filename Value="fhem2mqtt.lpr"/>
-        <Caret Line="9" Column="59" TopLine="4"/>
+        <Caret Line="20" Column="23" TopLine="10"/>
       </Position4>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
     <BreakPoints Count="1">
       <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsGlobal"/>
+        <WatchKind Value="wpkWrite"/>
         <Source Value="ufhem.pas"/>
         <Line Value="86"/>
       </Item1>
