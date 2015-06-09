@@ -9,8 +9,8 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="65"/>
-        <CursorPos X="19" Y="100"/>
+        <TopLine Value="32"/>
+        <CursorPos X="56" Y="58"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -74,7 +74,7 @@
         <UsageCount Value="10"/>
       </Unit9>
     </Units>
-    <JumpHistory Count="4" HistoryIndex="3">
+    <JumpHistory Count="5" HistoryIndex="4">
       <Position1>
         <Filename Value="ufhem.pas"/>
         <Caret Line="37" Column="27" TopLine="16"/>
@@ -91,6 +91,10 @@
         <Filename Value="fhem2mqtt.lpr"/>
         <Caret Line="20" Column="23" TopLine="10"/>
       </Position4>
+      <Position5>
+        <Filename Value="fhem2mqtt.lpr"/>
+        <Caret Line="74" Column="22" TopLine="66"/>
+      </Position5>
     </JumpHistory>
   </ProjectSession>
   <Debugging>

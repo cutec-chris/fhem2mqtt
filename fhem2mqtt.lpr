@@ -55,6 +55,7 @@ begin
       FName := FHEMLog.Log.Sock.ResolveIPToName(FName);
     end;
 
+  if not MQTTClient.isConnected then MQTTClient.Connect;
   MQTTClient.Publish('/'+FName+'/'+Dev+'/'+reading,value);
 end;
 
