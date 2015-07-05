@@ -1,6 +1,6 @@
 Source: fehm2mqtt
 Package: fehm2mqtt
-Version: VERSION
+Version: 0.3
 Section: office
 Priority: optional
 Maintainer: Christian Ulrich <info@free-erp.de>

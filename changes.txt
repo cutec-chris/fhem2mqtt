@@ -1,2 +1,6 @@
+0.3
+	automatic reconnect to mqtt brooker
+0.2 
+	automatic reconnect to fhem
 0.1 - 2015-04-06
 	initial version
