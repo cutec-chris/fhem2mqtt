@@ -36,7 +36,7 @@ var
   reading: String;
   value: String;
 begin
-  writeln(StringReplace(aInfo,'<br>','',[rfReplaceAll]));
+  write(StringReplace(aInfo,'<br>','',[rfReplaceAll]));
   aInfo := copy(aInfo,pos(' ',aInfo)+1,length(aInfo));//Date
   aInfo := copy(aInfo,pos(' ',aInfo)+1,length(aInfo));//Time
   Typ := copy(aInfo,0,pos(' ',aInfo)-1);
@@ -55,8 +55,20 @@ begin
       FName := FHEMLog.Log.Sock.ResolveIPToName(FName);
     end;
 
-  if not MQTTClient.isConnected then MQTTClient.Connect;
-  MQTTClient.Publish('/'+FName+'/'+Dev+'/'+reading,value);
+  if not MQTTClient.isConnected then
+    MQTTClient.Connect;
+  try
+    if not MQTTClient.Publish('/'+FName+'/'+Dev+'/'+reading,value) then
+      begin
+        writeln('-->failed');
+        raise Exception.Create('publishing failed');
+      end
+    else writeln('-->ok');
+  except
+    MQTTClient.Disconnect;
+    MQTTClient.Free;
+    MQTTClient := TMQTTClient.Create(GetOptionValue('m','mqtt'),1883);
+  end;
 end;
 
 procedure TFHEM2MQTT.DoRun;
