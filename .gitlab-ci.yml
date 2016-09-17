@@ -1,3 +1,7 @@
+before_script:
+  - git submodule sync
+  - git submodule update --init --recursive
+
 build-windows:
   script: git-bash build-win32.sh
   tags:
