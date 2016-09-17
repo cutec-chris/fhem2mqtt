@@ -3,10 +3,14 @@ build-windows:
   tags:
     - windows-i386
 build-linux-i386:
-  script: bash build_deb.sh
+  script:
+    - lazbuild fhem2mqtt.lpi
+    - bash build_deb.sh
   tags:
     - linux-i386
 build-linux-x86-64:
-  script: bash build_deb.sh
+  script: 
+    - lazbuild fhem2mqtt.lpi
+    - bash build_deb.sh
   tags:
     - linux-x64
