@@ -33,6 +33,7 @@
     <RequiredPackages Count="2">
       <Item1>
         <PackageName Value="LAZ_MQTT"/>
+        <DefaultFilename Value="components/laz_mqtt/TMQTTClient/laz_mqtt.lpk"/>
       </Item1>
       <Item2>
         <PackageName Value="laz_synapse"/>
@@ -46,7 +47,6 @@
       <Unit1>
         <Filename Value="ufhem.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="ufhem"/>
       </Unit1>
     </Units>
   </ProjectOptions>

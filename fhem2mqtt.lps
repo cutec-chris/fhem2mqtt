@@ -17,7 +17,6 @@
       <Unit1>
         <Filename Value="ufhem.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="ufhem"/>
         <CursorPos X="69" Y="141"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
