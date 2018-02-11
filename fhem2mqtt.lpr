@@ -58,7 +58,7 @@ begin
   if not MQTTClient.isConnected then
     MQTTClient.Connect;
   try
-    if not MQTTClient.Publish('/'+FName+'/'+Dev+'/'+reading,value) then
+    if not MQTTClient.Publish('/'+FName+'/'+Dev+'/'+copy(reading,0,pos(':',reading)-1,value) then
       begin
         writeln('-->failed');
         raise Exception.Create('publishing failed');
