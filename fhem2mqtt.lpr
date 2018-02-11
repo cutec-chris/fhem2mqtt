@@ -48,6 +48,8 @@ begin
 
   aInfo := copy(aInfo,pos(' ',aInfo)+1,length(aInfo));
   value := copy(aInfo,0,pos('<',aInfo)-1);
+  
+  FName := GetOptionValue('n','topic');
 
   if FName='' then
     begin
@@ -112,6 +114,7 @@ begin
   writeln('Usage: ', ExeName, ' -hfm');
   writeln('-f FHEM Instance');
   writeln('-m MQTT Instance');
+  writeln('-n Topic (optional)');
 end;
 
 var
